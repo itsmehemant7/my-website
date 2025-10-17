@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Your Profile - TLT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="./ihead2.svg" width="168" height="63" alt="Menu" class="menu-icon">
+    </div>
+    <div class="navbar-right">
+      <div class="user-info">
+        <div class="avatar">
+          <img src="./avatar.png" alt="Menu" class="menu-icon">
+        </div>
+        <div class="user-details" id="user-details">
+          <select id="person-select">
+            <option>Dr. John Doe</option>
+          </select>
+        </div>
+      </div>
+      <div class="org-logo">
+        <img id="org-image" src="./rhead2.svg" alt="ORG" class="ORG-icon">
+         <img id="org-menu" src="./menu.svg" alt="Menu" class="menu-icon">
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="main-content-div">
+      <h1>Create Your Profile</h1>
+
+      <form class="profile-form">
+        <div class="section">
+          <label class="section-label">Your Name</label>
+          <div class="row">
+            <div class="field">
+              <input type="text" placeholder="First Name">
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <label class="section-label">Contact Details</label>
+          <div class="row">
+            <div class="field"><input type="email" placeholder="Email"></div>
+            <div class="field"><input type="tel" placeholder="Mobile No"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <label class="section-label">Select Primary Role:</label>
+          <div class="row">
+            <div class="field">
+              <label>Role</label>
+              <div class="select-wrapper">
+                <select>
+                  <optgroup label="Specialist">
+                    <option value="owner">Owner</option>
+                    <option selected vlaue="partner">Partner</option>
+                    <option value="associate">Associate</option>
+                  </optgroup>
+                  <optgroup label="Others">
+                    <option value="hygienist">Hygienist</option>
+                    <option value="practice success director">Practice Success Director</option>
+                    <option value="strategic growth partner">Strategic Growth Partner</option>
+                    <option value="treatment consultant">Treatment Consultant</option>
+                    <option value="custom role">Custom Role</option>
+                  </optgroup>
+              </select>
+              </div>
+              
+            </div>
+            <div class="field">
+              <label>Specialty Type</label>
+              <div class="select-wrapper">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option value="periodontist">Periodontist</option>
+                  <option value="Endodontist">Endodontist</option>
+                  <option value="oral surgeon">Oral Surgeon</option>
+                  <option value="Prosthodontist">Prosthodontist</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div id="checkbox-container">
+            <label class="checkbox">
+              <input type="checkbox"> <span>Is this user a producer?</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="section">
+          <label class="section-label">Select Location</label>
+          <div class="row">
+            <div class="field">
+              <div class="select-wrapper">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option>Mumbai</option>
+                  <option>Bengaluru</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <div class="select-wrapper">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option>Delhi</option>
+                  <option>Pune</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn cancel">Cancel</button>
+          <button type="submit" class="btn submit">Submit</button>
+        </div>
+      </form>
+    </div>
+      
+  </main>
+
+ 
+</body>
+</html>
